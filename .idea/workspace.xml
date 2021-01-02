@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f025ab39-029f-4a94-83e3-87abf8902548" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/transformerDir/making.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformerDir/pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformerDir/positional_encoding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StockingBerd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StockingBerd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transformerDir/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transformerDir/training.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transformerDir/trainingMetrics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformerDir/attention.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformerDir/attention.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transformerDir/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformerDir/layers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformerDir/positional_encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformerDir/positional_encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformerDir/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformerDir/transformer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.training">
     <configuration name="pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="StockingBerd" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,8 +77,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="training" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="StockingBerd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformerDir" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transformerDir/training.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.training" />
         <item itemvalue="Python.pipeline" />
       </list>
     </recent_temporary>
@@ -94,28 +118,53 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="418" key="GridCell.Tab.0.bottom" timestamp="1608314613469">
-      <screen x="-2560" y="-411" width="2560" height="1417" />
+    <state width="1419" height="787" key="GridCell.Tab.0.bottom" timestamp="1609179841809">
+      <screen x="-4880" y="-743" width="1440" height="2537" />
     </state>
-    <state width="2539" height="418" key="GridCell.Tab.0.bottom/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608314613469" />
-    <state width="2539" height="418" key="GridCell.Tab.0.center" timestamp="1608314613468">
-      <screen x="-2560" y="-411" width="2560" height="1417" />
+    <state width="2539" height="418" key="GridCell.Tab.0.bottom/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608316594131" />
+    <state width="1419" height="787" key="GridCell.Tab.0.bottom/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-4880.-743.1440.2537" timestamp="1609179841809" />
+    <state width="2539" height="418" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1608507815834" />
+    <state width="1419" height="787" key="GridCell.Tab.0.center" timestamp="1609179841809">
+      <screen x="-4880" y="-743" width="1440" height="2537" />
     </state>
-    <state width="2539" height="418" key="GridCell.Tab.0.center/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608314613468" />
-    <state width="2539" height="418" key="GridCell.Tab.0.left" timestamp="1608314613467">
-      <screen x="-2560" y="-411" width="2560" height="1417" />
+    <state width="2539" height="418" key="GridCell.Tab.0.center/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608316594131" />
+    <state width="1419" height="787" key="GridCell.Tab.0.center/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-4880.-743.1440.2537" timestamp="1609179841809" />
+    <state width="2539" height="418" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1608507815830" />
+    <state width="1419" height="787" key="GridCell.Tab.0.left" timestamp="1609179841808">
+      <screen x="-4880" y="-743" width="1440" height="2537" />
     </state>
-    <state width="2539" height="418" key="GridCell.Tab.0.left/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608314613467" />
-    <state width="2539" height="418" key="GridCell.Tab.0.right" timestamp="1608314613468">
-      <screen x="-2560" y="-411" width="2560" height="1417" />
+    <state width="2539" height="418" key="GridCell.Tab.0.left/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608316594130" />
+    <state width="1419" height="787" key="GridCell.Tab.0.left/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-4880.-743.1440.2537" timestamp="1609179841808" />
+    <state width="2539" height="418" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1608507815818" />
+    <state width="1419" height="787" key="GridCell.Tab.0.right" timestamp="1609179841809">
+      <screen x="-4880" y="-743" width="1440" height="2537" />
     </state>
-    <state width="2539" height="418" key="GridCell.Tab.0.right/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608314613468" />
+    <state width="2539" height="418" key="GridCell.Tab.0.right/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608316594131" />
+    <state width="1419" height="787" key="GridCell.Tab.0.right/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-4880.-743.1440.2537" timestamp="1609179841809" />
+    <state width="2539" height="418" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1608507815832" />
     <state x="-1771" y="-64" key="SettingsEditor" timestamp="1608314038833">
       <screen x="-2560" y="-411" width="2560" height="1417" />
     </state>
     <state x="-1771" y="-64" key="SettingsEditor/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608314038833" />
+    <state x="-910" y="-257" width="907" height="1396" key="dock-window-1" timestamp="1609174724793">
+      <screen x="-3440" y="-257" width="3440" height="1417" />
+    </state>
+    <state x="-910" y="-257" width="907" height="1396" key="dock-window-1/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-3440.-257.3440.1417" timestamp="1609174724793" />
+    <state x="-2256" y="-257" width="1155" height="1417" key="dock-window-2" timestamp="1609175505897">
+      <screen x="-3440" y="-257" width="3440" height="1417" />
+    </state>
+    <state x="-2256" y="-257" width="1155" height="1417" key="dock-window-2/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-4880.-743.1440.2537" timestamp="1609175505897" />
+    <state x="-1996" y="-257" width="1155" height="1417" key="dock-window-3" timestamp="1609175867031">
+      <screen x="-3440" y="-257" width="3440" height="1417" />
+    </state>
+    <state x="-1996" y="-257" width="1155" height="1417" key="dock-window-3/-3440.-257.3440.1417/-4880.-743.1440.2537/0.23.1792.1097@-4880.-743.1440.2537" timestamp="1609175867031" />
+    <state x="-1433" y="90" key="refactoring.ChangeSignatureDialog" timestamp="1608316975963">
+      <screen x="-2560" y="-411" width="2560" height="1417" />
+    </state>
+    <state x="-1433" y="90" key="refactoring.ChangeSignatureDialog/-2560.-411.2560.1417/0.23.1792.1097@-2560.-411.2560.1417" timestamp="1608316975963" />
     <state x="-1615" y="-86" width="670" height="676" key="search.everywhere.popup" timestamp="1608316120850">
       <screen x="-2560" y="-411" width="2560" height="1417" />
     </state>
