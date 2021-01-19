@@ -16,3 +16,4 @@ with open('data.csv', 'a') as cf:
     for row in data:
         cf.write(','.join(row))
         cf.write('\n')
+#Ahemm sebbi sux
