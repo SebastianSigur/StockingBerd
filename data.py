@@ -6,10 +6,6 @@ import numpy as np
 # Make numpy values easier to read.
 np.set_printoptions(precision=3, suppress=True)
 
-import tensorflow as tf
-from tensorflow.keras import layers
-from tensorflow.keras.layers.experimental import preprocessing
-
 api = '2ADBTDTCWZH4DVHG'
 ticker = str('AAPL')
 time_tik = 1
