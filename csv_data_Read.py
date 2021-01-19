@@ -25,6 +25,8 @@ def csv_to_dict(file_name):
                 dicty[row[0][0:10]]['volume'].append(row[4])
 
     return dicty
+
+
 def change_time(time: str, plus_time:int):
     if time[3] == '0' and time[4] != '9' and time[3:5] != '59':
             time = time[0:4] + str(int(time[4:5])+plus_time) + time[5:]
@@ -36,6 +38,7 @@ def change_time(time: str, plus_time:int):
     else:
         time = time[0:3] + str(int(time[3:5])+plus_time) + time[5:]
     return time
+
 
 def complete_data(dicty, begin_time: str, time_interval: int, end_time: str):
     dicty_new = dicty
@@ -63,9 +66,12 @@ def complete_data(dicty, begin_time: str, time_interval: int, end_time: str):
                     break
                 time = change_time(time, time_interval)
                 current_count += 1
-
+    for key in dicty_new:
+        row = 0
+        for inner_key in dicty_new[key]:
+            if row == 0:
+                row += 1
+                continue
+            for count, value in enumerate(dicty[key][inner_key]):
+                dicty_new[key][inner_key][count] = float(value)
     return dicty_new
-
-dicty = csv_to_dict('data.csv')
-
-dicty = complete_data(dicty,'04:01:00' , 1, '20:00:00')
